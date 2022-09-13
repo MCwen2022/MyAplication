@@ -1,19 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <div id="baner">
-        <img src="placki.jpg" alt="placki">
-    </div>|
-    <div id="box">
-        <div id="akapit0">Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker</div>
-        <div id="akapit1">Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker</div>
-    </div>
+    <header>
+        <h1>Portal Ogłoszeniowy</h1>
+        <nav>
+            <a class="logo"><img src="logo.png"></a>
+            <a><b>Adres:</b> ul.Morska 45 Gdynia</a>
+            <a><b>telefon:</b> 601601601</a>
+            <a><b>e-mail:</b> ogłoszenia@poczta.pl</a>
+        </nav>
+    </header>
+    <main>
+        <div class="left">
+            <table>
+                <tr>
+                    <th>Liczba ogloszeń</th>
+                    <th>Cena ogloszeń</th>
+                    <th>Bonus</th>
+                </tr>
+                <tr>
+                    <td>1-50</td>
+                    <td>2 PLN</td>
+                    <td rowspan="2">Subskrybcja newslettera to upust 0.20 PLN na ogloszenie</td>
+                </tr>
+                <tr>
+                    <td>51 i wiecej</td>
+                    <td>1 PLN</td>
+                </tr>
+            </table>
+        </div>
+        <div class="middle">
+            <img src="logo.png">
+        </div>
+        <div class="right">
+            <form>
+                <label for="number">Podaj liczbę ogłoszeń:</label><br>
+                <input type="number" class="number"><br>
+                <label for="number">Policz upust na newslatter</label><br>
+                <input type="checkbox" class="checkbox" ><br>
+                
+        
+                <button>Oblicz</button>
+                <p class="wynik"></p>
+            </form>
+        </div>
+    </main>
+   
+    <footer>
+        <p>Portal ogłoszeniowy opracował: PESEL</p>
+    </footer>
 </body>
+<script src="main.js"></script>
 </html>
